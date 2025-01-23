@@ -102,6 +102,7 @@ public class Ejercicio12Funcionalidad2 {
 			@Override
 			// Limitar que ingrese solo 1 caracter en el TextField de LETRA
 			public void actionPerformed(ActionEvent e) {
+				ventanaPalabra.dispose();
 				  txt3.addKeyListener(new KeyAdapter() {
 			            @Override
 			            public void keyTyped(KeyEvent e) {
@@ -110,6 +111,7 @@ public class Ejercicio12Funcionalidad2 {
 			                }
 			            }
 			        });
+				  
 				  
 				  // Hace que al pulsar Enter simule un click en boton
 					txt3.addKeyListener(new KeyAdapter() {
