@@ -17,6 +17,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.Random;
 
 // Clase principal que implementa un juego de Ahorcado
@@ -40,7 +41,7 @@ public class Ejercicio12Funcionalidad2 {
 	String letra = ""; // Letra que el usuario intenta adivinar
 
 	// Componentes de la interfaz gráfica
-	Frame ventanaPalabra = new Frame("Indicar Palabra"); // Ventana para ingresar la palabra secreta
+	Frame ventanaPalabra = new Frame("Indicar Usuario"); // Ventana para ingresar el nombre
 	Frame ventana = new Frame("Ahorcado"); // Ventana principal del juego
 	Frame ventanaGanado= new Frame("VICTORIA"); // Ventana principal del juego
 
@@ -356,6 +357,9 @@ public class Ejercicio12Funcionalidad2 {
 			public void windowClosing(WindowEvent e) {
 				ventana.dispose();
 			}
+		});
+		ventana.addWindowListener(new WindowAdapter()
+		{
 		});
 	}
 
